@@ -1,22 +1,44 @@
-
-div{
-    background-color: red;
+.welcome:hover{
+    
+    background-color: rgba(0, 0, 0, 0.537);
+    
+}
+.welcome{
+    transition: background-color 300ms;
+}
+.button__float:hover {
+    background-color: black;
     color: white;
-    font-size: 24px;
+    
 }
-@media (max-width:992px) {
-    div{ 
-        font-size: 20px;
-    }
-}
-@media (max-width:768px) {
-    div{
-        font-size: 18px;
-    };
+.button__float--first:hover {
+    animation: float 2s infinite alternate-reverse;
 }
 
-@media (max-width:576px) {
-    div{
-        font-size: 16px;
-    }
+.button__float--first {
+    transition: all 300ms;
+    
+}
+@keyframes float{
+  0%{
+     transform: translateY(0);
+  }
+  100%{
+    transform: translateY(4px);
+  }
+}
+.button__float--second {
+    transition: all 300ms;
+   
+}
+.button__float--second:hover {
+    animation: float 2200ms infinite alternate-reverse; 
+    
+}
+.nav__link{
+    color: black;
+}
+.nav__link--active{
+    color: purple;
+    font-weight: bold;
 }
